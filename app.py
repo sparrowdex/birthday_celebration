@@ -1,30 +1,15 @@
-# import streamlit as st
 
-# st.set_page_config(page_title="Birthday Celebration", page_icon="🎂")
-
-# st.title("🎉 Celebrate Your Birthday! 🎉")
-
-# name = st.text_input("Enter your name:")
-# birth_date = st.date_input("Your Birth Date")
-
-# cake_flavor = st.selectbox("Choose a cake flavor:", ["Chocolate", "Vanilla", "Strawberry"])
-# toppings = st.multiselect("Pick your toppings:", ["Cherries", "Fruits", "Nuts", "Whipped Cream"])
-# sprinkles = st.radio("Add sprinkles?", ["Yes", "No"])
-
-# if st.button("🎂 Celebrate Now!"):
-#     st.success(f"Happy Birthday, {name or 'Friend'}! Here's your {cake_flavor} cake!")
-    
-#     st.image("assets/cake.gif", caption="Your cake is ready!", use_column_width=True)
-    
-#     audio_file = open('assets/birthday_song.mp3', 'rb')
-#     audio_bytes = audio_file.read()
-#     st.audio(audio_bytes, format='audio/mp3')
 import streamlit as st
 import os
 import random
 from datetime import date, timedelta
 
-st.set_page_config(page_title="🎉 Birthday Celebration 🎂", layout="centered")
+st.set_page_config(
+    page_title="🎉 Birthday Celebration 🎂",
+    page_icon="assets/my_logo.ico",  # or "assets/my_logo.png"
+    layout="centered"
+)
+
 
 st.title("🎉 Let's Celebrate Your Birthday!")
 
